@@ -5,6 +5,7 @@
 ---
 
 🔗 **Live :** https://globetrotter-site.netlify.app/game.html
+(The backend server is hosted on Render's free tier, which may take 1-2 minutes to start after the first request due to cold start delays. Please allow some time for the server to initialize after making the initial API call.)
 ## 🚀 Tech Stack
 
 ### **Frontend**
