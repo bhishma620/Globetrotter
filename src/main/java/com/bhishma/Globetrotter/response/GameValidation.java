@@ -6,7 +6,6 @@ public class GameValidation {
     private boolean isValid;
     private String text;
 
-    private List<String> trivals;
 
     public boolean isValid() {
         return isValid;
@@ -24,11 +23,5 @@ public class GameValidation {
         this.text = text;
     }
 
-    public List<String> getTrivals() {
-        return trivals;
-    }
 
-    public void setTrivals(List<String> trivals) {
-        this.trivals = trivals;
-    }
 }

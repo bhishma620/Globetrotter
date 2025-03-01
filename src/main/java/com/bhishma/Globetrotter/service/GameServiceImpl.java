@@ -57,10 +57,12 @@ public class GameServiceImpl implements GameService {
             response.setValid(isCorrect);
             List<String> funfacts = funFactRepo.findByDestId(destination.get().getId());
             List<String> trivals = triviaRepo.findByDestId(id);
-            response.setText(funfacts.get(getRandomInd(funfacts.size())));
 
             if (isCorrect) {
-                response.setTrivals(trivals);
+                response.setText(funfacts.get(getRandomInd(funfacts.size())));
+            }
+            else{
+                response.setText(trivals.get(getRandomInd(funfacts.size())));
             }
             return new ResponseEntity<>(response, HttpStatus.OK);
         } else {
